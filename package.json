@@ -4,7 +4,8 @@
   "description": "local webhook for dialogflow fulfillment using ngrok",
   "main": "serve.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tunnel": "ngrok http 8080"
   },
   "keywords": [
     "dialogflow",
@@ -14,7 +15,11 @@
   "author": "Azaz Ahamed",
   "license": "ISC",
   "dependencies": {
+    "actions-on-google": "^2.12.0",
     "dialogflow-fulfillment": "^0.6.1",
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "ngrok": "^3.2.7"
   }
 }
