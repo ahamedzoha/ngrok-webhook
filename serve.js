@@ -1,4 +1,5 @@
 const express = require('express')
+const { WebhookClient } = ('dialogflow-fulfillment')
 
 //Access to firebase admin SDK for database read/write operation for fulfillment.
 const admin = require('firebase-admin')
