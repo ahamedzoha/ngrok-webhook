@@ -1,14 +1,6 @@
-const firebase = require('firebase')
+
 // Your web app's Firebase configuration
-var firebaseConfig = {
-    apiKey: "AIzaSyDXln2lxO_bUAN6ucd8xNd65ku0ubtxQ_4",
-    authDomain: "iot-001-241915.firebaseapp.com",
-    databaseURL: "https://iot-001-241915.firebaseio.com",
-    projectId: "iot-001-241915",
-    storageBucket: "iot-001-241915.appspot.com",
-    messagingSenderId: "483001273405",
-    appId: "1:483001273405:web:c3b6b9c5eaeeca5043ee54"
-};
+const firebase = require('firebase')
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 const database = firebase.database()
