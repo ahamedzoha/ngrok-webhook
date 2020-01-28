@@ -1,9 +1,23 @@
+// Your web app's Firebase configuration
+var firebaseConfig = {
+    apiKey: "AIzaSyDXln2lxO_bUAN6ucd8xNd65ku0ubtxQ_4",
+    authDomain: "iot-001-241915.firebaseapp.com",
+    databaseURL: "https://iot-001-241915.firebaseio.com",
+    projectId: "iot-001-241915",
+    storageBucket: "iot-001-241915.appspot.com",
+    messagingSenderId: "483001273405",
+    appId: "1:483001273405:web:c3b6b9c5eaeeca5043ee54"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
+
 const express = require('express')
 const { WebhookClient } = ('dialogflow-fulfillment')
 
-//Access to firebase admin SDK for database read/write operation for fulfillment.
-const admin = require('firebase-admin')
-admin.initializeApp()
+//Access to firebase admin SDK for database read/write operation for fulfillment. TODO when launched as Cfunc
+// const admin = require('firebase-admin')
+// admin.initializeApp()
 
 // Import the appropriate class
 const { WebhookClient } = require('dialogflow-fulfillment')
