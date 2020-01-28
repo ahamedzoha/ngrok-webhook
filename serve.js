@@ -1,4 +1,4 @@
-
+const firebaseConfig = require('./firebase-auth')
 // Your web app's Firebase configuration
 const firebase = require('firebase')
 // Initialize Firebase
