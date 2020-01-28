@@ -1,3 +1,5 @@
 
 # Do not stage node module files
 node_modules
+
+firebase-auth.js
