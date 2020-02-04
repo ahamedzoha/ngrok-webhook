@@ -21,10 +21,12 @@ app.post('/dialogflow', express.json(), (req, res) => {
 
     const welcome = () => {
         agent.add('Welcome to my agent!')
+        agent.add("I'm Zoha")
     }
 
     const tempQ = () => {
-        agent.add('Temperature Query Invoked!')
+        agent.add('Temperature Query Has Been Detected')
+        agent.add('This feature is in development.')
         console.log(JSON.stringify(req.body.queryResult.parameters))
 
         //USED FOR CONNECTION TESTING - CALLS THE ENTIRE DATABASE 
